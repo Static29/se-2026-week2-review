@@ -12,6 +12,7 @@ public class Example {
     public String reverse(String str, List<String> list) {
         if(list == null)
             list = new ArrayList<>();
+        if (str == null) {
              return "";
             }
         if (str.length() == 0) {  
