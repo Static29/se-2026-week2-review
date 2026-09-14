@@ -5,7 +5,7 @@ public class Example {
 
     public static void main(String[] args) {
         Example e = new Example();
-        String s = e.reverse("adc", new ArrayList<>());        
+        String s = e.reverse("abc", new ArrayList<>());        
         System.out.println(s);        
     }
 
