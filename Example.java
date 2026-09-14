@@ -12,8 +12,8 @@ public class Example {
     public String reverse(String str, List<String> list) {
         if(list == null)
             list = new ArrayList<>();
-        if (str.length() < 0) {  
-            StringBuffer sb = new StringBuffer();
+        if (str.length() == 0) {  
+            StringBuilder sb = new StringBuilder();
             for (String s : list) {
                 sb.append(s);
             }
