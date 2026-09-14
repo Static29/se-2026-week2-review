@@ -5,14 +5,17 @@ public class Example {
 
     public static void main(String[] args) {
         Example e = new Example();
-        String s = e.reverse("abc", new ArrayList<>());        
+        String s = e.reverse("adc", new ArrayList<>());        
         System.out.println(s);        
     }
 
     public String reverse(String str, List<String> list) {
         if(list == null)
             list = new ArrayList<>();
-        if (str.length() < 0) {  
+        if (str == null)
+            return "str must not be null";
+
+        if (str.length() <= 0) {  
             StringBuffer sb = new StringBuffer();
             for (String s : list) {
                 sb.append(s);
